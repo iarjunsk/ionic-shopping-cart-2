@@ -1,0 +1,25 @@
+<ion-view title="Filter By">
+    <ion-content padding="'true'" class="has-header">
+        
+
+		<form ng-submit="getCategory((Categories|filter:{selected: true}))">
+		
+			<ion-list ng-repeat="category in Categories">     
+				  <ion-checkbox ng-model="category.selected">
+					<h2 class="calm">{{category.name}}</h2>
+				  </ion-checkbox>
+			  </ion-list>
+			  
+			  <div class="list box">
+				<button class="button button-block button-calm" type="submit">Apply</button>
+			  </div>
+		  
+		</form>
+	
+	
+		
+		
+
+
+    </ion-content>
+</ion-view>

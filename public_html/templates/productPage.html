@@ -1,0 +1,20 @@
+<ion-view title="Product">
+    <ion-content padding="'true'" class="has-header">
+        <img ng-src="{{img}}" width="100%" height="auto" style="width: 100%; height: auto;">
+        <div class="button-bar">
+            <button class="button button-positive button-clear button-block  icon ion-android-cart"></button>
+            <button class="button button-assertive button-clear button-block  icon ion-android-favorite-outline"></button>
+            <button class="button button-balanced button-clear button-block  icon ion-share"></button>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Description</div>
+            <div class="item item-body">
+                <div>
+					<p> {{name}}</p>
+					<p>Price: ${{price}}</p>
+                    <p>{{desc}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

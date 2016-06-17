@@ -1,0 +1,51 @@
+<ion-view title="Menu">
+    <ion-content padding="'false'" class="has-header">
+
+		
+		<!-- -->
+<!--Automatically loops back from the begining -->
+<ion-slide-box auto-play ="true" does-continue="true" show-pager="true"  >
+
+	<!-- width: 100% height 50% to fill the slidder image according to the layout -->
+   <ion-slide class="swiper-slide swiper-slide-active" style="width:100%; height: 50%; "  ng-repeat="slide in slide_items" >
+      <div>
+         <img  ng-src="{{'img/'+ slide.p_image_id +'.jpg'}}"  ng-click="showProductInfo(slide.p_id,slide.p_description,slide.p_image_id,slide.p_name,slide.p_price)" >
+      </div>
+   </ion-slide >
+   
+</ion-slide-box>
+		
+        <div class="button-bar">
+            <a href="#/page6" class="button button-stable button-block  icon-left ion-android-funnel">Filter</a>
+            <a href="#/page7" class="button button-stable button-block  icon ion-android-restaurant">Sort</a>
+        </div>
+        <ion-list ng-repeat="item in menu_items">
+            
+			<ion-item class="item-thumbnail-left" >
+                <img  ng-src="{{'img/'+ item.p_image_id +'.jpg'}}"  ng-click="showProductInfo(item.p_id,item.p_description,item.p_image_id,item.p_name,item.p_price)" >
+				
+				<p style="position:absolute;right:10px;">
+				<a  ng-click="addToCart(item.p_id,item.p_image_id,item.p_name,item.p_price)" class="button  button-balanced button-clear   icon ion-android-cart">  </a> 
+				</p>
+                
+				<h2  ng-click="showProductInfo(item.p_id,item.p_description,item.p_image_id,item.p_name,item.p_price)" > {{item.p_name}} </h2>
+                <p   ng-click="showProductInfo(item.p_id,item.p_description,item.p_image_id,item.p_name,item.p_price)">Price: &#8377; {{item.p_price}}</p>
+			</ion-item>
+			
+            
+        </ion-list>
+		
+		  
+		<ion-infinite-scroll 
+		ng-if="!noMoreItemsAvailable" 
+		on-infinite="loadMore()" 
+		distance="10%">
+			<ion-infinite-scroll-content
+			loadingSpinner="bubbles">
+		</ion-infinite-scroll>
+
+
+		
+		
+    </ion-content>
+</ion-view>
