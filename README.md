@@ -30,7 +30,9 @@ Here is a complete set of Tutorials for Ionic Cordova:
 
 ###  Potential Use :
 
-    + In food courts you could host a local WiFi, with its default page as FoodKart. Then when the user need to order a product, he could easily connect to the WiFi and place the order.  
+    1. In food courts you could host a local WiFi, with its default page as FoodKart. 
+    Then when the user need to order a product, he could easily connect to the WiFi 
+    and place the order.  
 
 
 
