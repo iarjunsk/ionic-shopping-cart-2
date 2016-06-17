@@ -34,7 +34,7 @@ Here is a complete set of Tutorials for Ionic Cordova:
 
 ###  Potential Benefits :
 
-+ " Why Install to Run ! ". With ionic, you can host the web app online and run it directly from your phone browser without the hassle of installing the app on your phone.
++ " Why Install to Run ? ". With ionic, you can host the web app online and run it directly from your phone browser without the hassle of installing the app on your phone.
 + Easy portability to different platforms (iOS, Android, Windows )
 
 ###  Potential Market:
