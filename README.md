@@ -28,14 +28,9 @@ Here is a complete set of Tutorials for Ionic Cordova:
     3. Dynamically get the featured listing
     4. Push notification service to show the order status.
 
-###  Potential Benefits :
-
-+ " Why Install to Run ? ". With ionic, you can host the web app online and run it directly from your phone browser without the hassle of installing the app on your phone.
-+ Easy portability to different platforms (iOS, Android, Windows )
-
 ###  Potential Use :
 
-+ In food courts you could host a local WiFi, with its default page as FoodKart. Then when the user need to order a product, he could easily connect to the WiFi and place the order.  
+    + In food courts you could host a local WiFi, with its default page as FoodKart. Then when the user need to order a product, he could easily connect to the WiFi and place the order.  
 
 
 
