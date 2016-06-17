@@ -34,12 +34,12 @@ Feature to be Added:
 
 Potential Benefits :
 
-    ⋅⋅ *" Why Install to Run ! ". With ionic, you can host the web app online and run it directly from your phone browser without the hassle of installing the app on your phone.
-    ⋅⋅ *Easy portability to different platforms (iOS, Android, Windows )
+    * " Why Install to Run ! ". With ionic, you can host the web app online and run it directly from your phone browser without the hassle of installing the app on your phone.
+    * Easy portability to different platforms (iOS, Android, Windows )
 
 Potential Market:
 
-    ⋅⋅* In food courts you could host a local WiFi, with its default page as FoodKart. Then when the user need to order a product, he could easily connect to the WiFi and place the order.  
+    * In food courts you could host a local WiFi, with its default page as FoodKart. Then when the user need to order a product, he could easily connect to the WiFi and place the order.  
 
 
 
