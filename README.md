@@ -2,7 +2,7 @@
 
 FoodKart v0.3
 
-![Food Cart ](http://raw.githubusercontent.com/arjunsk/shopping-cart/master/screenshots/screen.png)
+![Food Cart ](https://raw.githubusercontent.com/arjunsk/shopping-cart/master/screenshots/screen.png)
 
 FoodKart is an simple Food Purchase App, build in HTML5 - Cordova. Since it is a web app, you can easily port it to all the platforms.
 
