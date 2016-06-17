@@ -8,11 +8,7 @@ FoodKart is an simple Food Purchase App, build in HTML5 - Cordova. Since it is a
 
 Here is a complete set of Tutorials for Ionic Cordova:
 
-[Ionic Cordova Shopping Cart ](http://www.arjunsk.com/html5/how-to-build-html5-app-using-ionic-cordova-part-4)
-
-
-
-
+[Ionic Cordova Shopping Cart ](http://www.arjunsk.com/tag/shopping-cart/)
 
 ###  What's New:
 
