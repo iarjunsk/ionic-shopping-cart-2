@@ -1,6 +1,6 @@
 # Shopping Cart 
 
-FoodKart v0.3
+FoodKart v0.2
 
 ![Food Cart ](https://raw.githubusercontent.com/arjunsk/shopping-cart/master/screenshots/screen.png)
 
