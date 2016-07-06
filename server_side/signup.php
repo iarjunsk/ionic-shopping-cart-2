@@ -34,7 +34,7 @@
 		$address=$request->add; 
 		$pincode=$request->pin; 
 		
-		$conn = new mysqli("localhost", "username", "password", "database");
+		$conn = new mysqli('localhost', 'user', 'pass', 'dbname');
 
 		// To protect MySQL injection for Security purpose
 		$name = stripslashes($name);
@@ -42,33 +42,28 @@
 		$password = stripslashes($password);
 		$phone = stripslashes($phone);
 		$address = stripslashes($address);
-	  $pincode = stripslashes($pincode);
+	        $pincode = stripslashes($pincode);
+		// the above stripslashes is not required unless if you are using javascript, which im still new to Ionic but i guess it uses javascript for posting ? So i will just keep them.
 
-		$name = $conn->real_escape_string($name);
-		$username = $conn->real_escape_string($username);
-		$password = $conn->real_escape_string($password);
-		$phone = $conn->real_escape_string($phone);
-		$address = $conn->real_escape_string($address);
-		$pincode = $conn->real_escape_string($pincode);
+		$stment = $conn->prepare("SELECT count(*) FROM `users` WHERE `u_id` = ?");
+		$stment->bind_param('s', $username);
+		$stment->execute();
 
-		$check="SELECT count(*) FROM users WHERE u_id = '$username'";
-		$rs = mysqli_query($conn,$check);
-		$data = mysqli_fetch_array($rs, MYSQLI_NUM);
-		//print_r($data);
-		if($data[0] > 0) {
+		$return = $stment->fetch();
+		if ($return) {
 			$outp='{"result":{"created": "0" , "exists": "1" } }';
+		} else {
+			$stment = $conn->prepare("INSERT INTO users (u_name, u_id, u_password, u_phone, u_address, u_pincode, u_verified) VALUES (?, ?, ?, ?, ?, ?, ?)");
+			$stment->bind_param("ssssssi", $name, $username, $password, $phone, &address, $pincode, 1);
+			$stment->execute();
+			$outp='{"result":{"created": "1", "exists": "0" } }';
 		}
 
-		else{	
-	 	  $sql = "INSERT INTO users VALUES ('$name', '$username', '$password', '$phone','$address' ,'$pincode',1 )";		
-			if ($conn->query($sql) === TRUE) {
-				$outp='{"result":{"created": "1", "exists": "0" } }';
-			} 
-		}
 
 		echo $outp;
 		
-		$conn->close();	
+		$stment-close();
+		$conn->close();
 
 }
 
