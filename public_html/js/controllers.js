@@ -158,8 +158,11 @@ angular.module('app.controllers', [])
 				});
 				lastView = $ionicHistory.backView();
 				console.log('Last View',lastView);
-				if(lastView.stateId=="checkOut"){ $state.go('checkOut', {}, {location: "replace", reload: true}); }
-				else{$state.go('profile', {}, {location: "replace", reload: true});}
+				//BUG to be fixed soon
+				/*if(lastView.stateId=="checkOut"){ $state.go('checkOut', {}, {location: "replace", reload: true}); }
+				else{*/
+		        	$state.go('profile', {}, {location: "replace", reload: true});
+				//}
 				
 			}).error(function() {
 					var alertPopup = $ionicPopup.alert({
