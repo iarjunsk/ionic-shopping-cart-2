@@ -43,5 +43,9 @@ Here is a complete set of Tutorials for Ionic Cordova:
 
 
 
+####Update (31-07-2016):
 
+Video Tutorial: 
+
+[![Ionic Shopping Cart](https://img.youtube.com/vi/86u1_-ggsDE/0.jpg)](https://www.youtube.com/watch?v=86u1_-ggsDE&feature=youtu.be)
 
