@@ -5,7 +5,9 @@
 
 ![FoodKart V0.3 ](https://raw.githubusercontent.com/arjunsk/ionic-firebase-shopping-cart/master/fk-latest.png)
 
-
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic-shopping-cart-2'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic-shopping-cart-2.svg' />
+</a>
 
 FoodKart v0.2
 
