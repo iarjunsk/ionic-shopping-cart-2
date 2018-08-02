@@ -142,7 +142,7 @@ angular.module('app.controllers', [])
 		$scope.user = {};
 		
 		$scope.login = function() {
-			str="http://www.yourwebsite.com/foodkart/user-details.php?e="+$scope.user.email+"&p="+$scope.user.password;
+			str="http://www.yourwebsite.com/foodkart/user-details.php?e="+$scope.user.name+"&p="+$scope.user.password;
 			$http.get(str)
 			.success(function (response){
 				$scope.user_details = response.records;
