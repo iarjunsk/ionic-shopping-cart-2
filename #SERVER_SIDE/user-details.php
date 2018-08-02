@@ -16,7 +16,7 @@ if( isset($_GET["e"]) && isset($_GET["p"]) ){
 			$password = md5($password);		
 			
 			$query="SELECT u_name, u_id, u_phone, u_address, u_pincode FROM users 
-					where u_verified=1 and u_id like '".$username."' and u_password like '".$password."'";	
+					where u_verified=1 and u_name = '".$username."' and u_password like '".$password."'";	
 					
 			$result = $conn->query($query);		$outp = "";				
 		
