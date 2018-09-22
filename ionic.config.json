@@ -1,4 +1,10 @@
 {
   "name": "app",
-  "app_id": ""
+  "integrations": {},
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
