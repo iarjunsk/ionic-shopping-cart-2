@@ -34,7 +34,7 @@
 		$address=$request->add; 
 		$pincode=$request->pin; 
 		
-		$conn = new mysqli("localhost", "db_user", "db_pass", "db_name");
+		$conn = new mysqli('localhost', 'root', '', 'foodkart');
 		
 		// To protect MySQL injection for Security purpose
 		$name = stripslashes($name);

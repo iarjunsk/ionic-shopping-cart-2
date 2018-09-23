@@ -70,7 +70,7 @@ angular.module('app.services', [])
 .factory('sharedFilterService', [function(){
 
 	var obj = {};
-    obj.str = "http://www.yourwebsite.com/foodkart/food_menu.php?till=";
+    obj.str = "http://ec2-52-91-63-105.compute-1.amazonaws.com/foodkart/api/food_menu.php?till=";
 	obj.sort = "";
 	obj.search = "";
 	obj.category = "";
@@ -81,7 +81,7 @@ angular.module('app.services', [])
 	obj.getUrl=function(){
 		
 		obj.till=obj.till + 5;
-		obj.str="http://www.yourwebsite.com/foodkart/food_menu.php?till="+obj.till; // pass the value to url
+		obj.str="http://ec2-52-91-63-105.compute-1.amazonaws.com/foodkart/api/food_menu.php?till="+obj.till; // pass the value to url
 		
 		if(obj.sort!="" && obj.category!=""){
 			obj.str= obj.str+"&category="+obj.category+"&sort="+obj.sort;
@@ -94,8 +94,11 @@ angular.module('app.services', [])
 		}
 		console.log("URL",obj.str);
 		return obj.str;
+		
 	};
 	return obj;
+
+	
 }])
 
 

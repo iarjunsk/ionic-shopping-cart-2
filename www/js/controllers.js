@@ -142,7 +142,7 @@ angular.module('app.controllers', [])
 		$scope.user = {};
 		
 		$scope.login = function() {
-			str="http://www.yourwebsite.com/foodkart/user-details.php?e="+$scope.user.email+"&p="+$scope.user.password;
+			str="http://ec2-52-91-63-105.compute-1.amazonaws.com/foodkart/api/user-details.php?e="+$scope.user.email+"&p="+$scope.user.password;
 			$http.get(str)
 			.success(function (response){
 				$scope.user_details = response.records;
@@ -178,7 +178,7 @@ angular.module('app.controllers', [])
 
 	$scope.signup=function(data){
 			
-			var link = 'http://www.yourwebsite.com/foodkart/signup.php';
+			var link = 'http://ec2-52-91-63-105.compute-1.amazonaws.com/foodkart/api/signup.php';
 			$http.post(link, {n : data.name, un : data.username, ps : data.password , ph: data.phone , add : data.address , pin : data.pincode })
 			.then(function (res){	
 				$scope.response = res.data.result; 
