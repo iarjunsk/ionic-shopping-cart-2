@@ -1,6 +1,8 @@
 {
   "name": "app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "watchPatterns": [
     "scss/**/*",
     "www/**/*",
