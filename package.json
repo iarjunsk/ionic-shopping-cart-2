@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "app: An Ionic project",
   "dependencies": {
+    "cordova-plugin-network-information": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
@@ -23,5 +24,10 @@
     "cordova-plugin-statusbar",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [],
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-network-information": {}
+    }
+  }
 }

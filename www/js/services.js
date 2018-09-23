@@ -94,8 +94,11 @@ angular.module('app.services', [])
 		}
 		console.log("URL",obj.str);
 		return obj.str;
+		
 	};
 	return obj;
+
+	
 }])
 
 

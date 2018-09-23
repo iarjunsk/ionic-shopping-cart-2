@@ -11,7 +11,24 @@
           height: 504px;
       }
     </style>
+<script>
 
+document.addEventListener("offline", onOffline, false);
+
+function onOffline() {
+   var stat = document.getElementById("stat");
+   stat.innerHTML("<div class='appstatus'>Offline</div>")
+}
+
+
+document.addEventListener("online", onOnline, false);
+
+function onOnline() {
+   var stat = document.getElementById("stat");
+   stat.innerHTML("<div class='appstatus'>Online</div>")
+}
+
+  </script>
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 	
@@ -32,6 +49,7 @@
 
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
+    <div id="stat"></div>
   <div>
     <div>
 	
