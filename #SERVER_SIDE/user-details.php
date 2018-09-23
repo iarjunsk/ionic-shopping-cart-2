@@ -5,7 +5,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if( isset($_GET["e"]) && isset($_GET["p"]) ){	
 		if( !empty($_GET["e"])  && !empty($_GET["p"])  ){	
-			$conn = new mysqli("localhost", "root", "", "foodkart");;						
+			$conn = new mysqli("localhost", "root", "Comfortkey741!", "foodkart");;						
 			$username=$_GET["e"];		$password=$_GET["p"];				
 			
 			// To protect MySQL injection for Security purpose		
